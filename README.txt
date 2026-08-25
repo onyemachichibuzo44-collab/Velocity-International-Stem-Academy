@@ -1,2 +1,1 @@
-VELOCITY INTERNATIONAL STEM ACADEMY
-Open index.html. Seven core pages plus six Learning Center destination pages are included.
+Open index.html to preview. The site is mobile-friendly and the buttons are linked to your Meet, Classroom and WhatsApp. The Learning Center is prepared for Google Drive materials.
