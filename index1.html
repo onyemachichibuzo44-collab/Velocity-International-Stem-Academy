@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>VELOCITY INTERNATIONAL STEM ACADEMY - MASTER CLEAN</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:Poppins,Arial;background:#071a36;color:#fff;overflow-x:hidden}
+a{color:inherit;text-decoration:none}
+header{background:#081c3e;display:flex;justify-content:space-between;align-items:center;padding:10px 18px;border-bottom:3px solid #ffcc33;position:sticky;top:0;z-index:999;flex-wrap:wrap;gap:10px}
+.logo{font-weight:900;font-size:22px;line-height:.9}.logo span{display:block;font-size:9px;letter-spacing:1.5px;font-weight:500;margin-top:2px}
+nav{display:flex;gap:10px;font-size:10px;font-weight:700;align-items:center;flex-wrap:wrap}
+nav a{padding:5px 8px;border-radius:5px;cursor:pointer} nav a.active, nav a:hover{background:#ffcc33;color:#081c3e}
+.btn-join{background:linear-gradient(180deg,#ffeaa0,#ffcc33);color:#081c3e;padding:7px 14px;border-radius:6px;font-weight:800;font-size:11px}
+.hero{background:radial-gradient(ellipse at 20% 30%,#123a7a 0%,#06132e 70%);padding:20px;display:grid;grid-template-columns:42% 58%;gap:12px}
+.hero h2{font-size:34px;line-height:.9;font-weight:900}.gold{color:#ffcc33;font-size:42px;display:block}.info{font-size:11.5px;margin:10px 0;display:flex;gap:8px;line-height:1.3}
+.hero-imgs{position:relative;height:400px}.hero-imgs img{position:absolute;border-radius:12px;border:2px solid rgba(255,204,51,.3);box-shadow:0 6px 20px rgba(0,0,0,.4)}
+.main-img{left:0;top:10px;width:68%;height:92%;object-fit:cover}.top-img{right:0;top:0;width:36%;height:36%;z-index:2}.bot-img{right:0;bottom:12%;width:34%;height:30%;z-index:2}
+.panels{display:grid;grid-template-columns:38% 60%;gap:10px;padding:12px;background:#071a36}
+.panel{background:linear-gradient(180deg,#0f2f66,#0a2147);border:2px solid #ffcc33;border-radius:12px;padding:12px}
+.panel h4{color:#ffcc33;text-align:center;font-size:12px;margin-bottom:10px}
+.step{display:flex;gap:8px;margin:8px 0;font-size:11px;align-items:center}.num{background:#ffcc33;color:#081c3e;width:20px;height:20px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:11px}
+.btn-blue{background:#1a5eff;color:#fff;padding:5px 10px;border-radius:6px;font-size:10px;font-weight:700}
+.class-grid{display:grid;grid-template-columns:1fr 1fr;gap:7px}.cbox{background:#143168;border:1px solid #2a4f8a;border-radius:8px;padding:6px;display:flex;gap:6px;align-items:center;font-size:10px;transition:.2s}.cbox:hover{transform:translateY(-2px);border-color:#ffcc33}.cbox img{width:32px;height:20px;border-radius:3px;object-fit:cover}
+.sub-sec{background:linear-gradient(180deg,#f8fbff,#eef2f7);color:#081c3e;padding:12px;display:grid;grid-template-columns:1fr 260px;gap:12px}
+.sub-sec h3{grid-column:1/-1;text-align:center;font-size:16px;font-weight:800;margin-bottom:6px}
+.sub-cards{display:grid;grid-template-columns:repeat(5,1fr);gap:8px}.scard{background:#fff;border-radius:10px;overflow:hidden;border:1px solid #d0d9e3;text-align:center;box-shadow:0 3px 10px rgba(0,0,0,.06)}.scard img{width:100%;height:85px;object-fit:cover}.scard h5{font-size:9px;margin:6px 0 3px;font-weight:800}.scard p{font-size:8px;padding:0 6px 8px;color:#5a6a7e;line-height:1.2}.scard .open{background:#ffcc33;color:#081c3e;padding:4px 10px;border-radius:20px;font-size:8px;font-weight:800;display:inline-block;margin-bottom:8px}
+.why{background:linear-gradient(180deg,#0e2c5c,#081c3e);border-radius:12px;padding:12px;color:#fff;border:2px solid #1e3a6a}.why h4{color:#ffcc33;font-size:13px;text-align:center;margin-bottom:10px}.why li{font-size:10.5px;margin:7px 0;list-style:none;display:flex;gap:6px}
+.learn{background:linear-gradient(90deg,#081c3e,#123a7a,#081c3e);padding:14px;text-align:center;border-top:2px solid #ffcc33;border-bottom:2px solid #ffcc33}.learn h3{color:#ffcc33;font-size:20px;letter-spacing:3px;margin-bottom:12px}.licons{display:flex;justify-content:center;gap:10px;flex-wrap:wrap}.licon{background:rgba(255,255,255,.06);border:1.5px solid #ffcc33;border-radius:10px;padding:8px;width:90px;backdrop-filter:blur(4px);transition:.2s}.licon:hover{transform:translateY(-3px);background:rgba(255,204,51,.15)}.licon .ico{font-size:20px}
+.contact{background:#06132e;padding:16px;text-align:center;border-top:2px solid #123061}.contact h3{color:#ffcc33;margin-bottom:12px;letter-spacing:1px}.cinfo{display:flex;justify-content:center;gap:18px;font-size:11px;margin-bottom:12px;flex-wrap:wrap}
+.gold-btns{display:flex;justify-content:center;gap:10px;flex-wrap:wrap}.gbtn{width:300px;background:linear-gradient(180deg,#fff6c0,#ffcc33,#c9982e);border-radius:8px;padding:10px;color:#081c3e;font-weight:800;font-size:11px;border:1px solid #e6b800;box-shadow:0 3px 10px rgba(0,0,0,.3)}.gbtn small{font-size:8px;display:block;word-break:break-all;opacity:.8;margin-top:3px}
+.page-sec{display:none;background:#081c3e;padding:20px;min-height:70vh;border-top:3px solid #ffcc33}.page-sec.active{display:block}
+.page-sec h2{color:#ffcc33;margin-bottom:14px;font-size:22px}.card2{background:#0f2f66;border:1.5px solid #1e4a8a;border-radius:10px;padding:14px;margin:12px 0;font-size:12px;line-height:1.5}.card2 h3{color:#ffcc33;margin-bottom:6px;font-size:14px}
+.back{color:#ffcc33;font-size:12px;font-weight:700;cursor:pointer;display:inline-block;margin:10px 0}
+@media(max-width:900px){.hero{grid-template-columns:1fr}.hero-imgs{height:320px}.panels{grid-template-columns:1fr}.sub-sec{grid-template-columns:1fr}.sub-cards{grid-template-columns:repeat(2,1fr)}nav{font-size:9px}}
+</style>
+</head>
+<body>
+
+<header>
+<div class="logo">VELOCITY<span>INTERNATIONAL STEM ACADEMY - VIS-ACADEMY</span></div>
+<nav>
+<a class="active" onclick="showPage('home',this)">HOME</a>
+<a onclick="showPage('about',this)">ABOUT</a>
+<a onclick="showPage('academics',this)">ACADEMICS</a>
+<a onclick="showPage('learning',this)">LEARNING</a>
+<a onclick="showPage('classrooms',this)">CLASSROOMS</a>
+<a onclick="showPage('contact-page',this)">CONTACT</a>
+<a href="https://meet.google.com/fim-eeua-dor" target="_blank" class="btn-join">JOIN NOW</a>
+</nav>
+</header>
+
+<!-- HOME PAGE -->
+<div id="home" class="page-sec active">
+<section class="hero">
+<div>
+<h2>WELCOME TO <span class="gold">VELOCITY</span></h2>
+<h3 style="color:#ffcc33;font-size:14px">INTERNATIONAL STEM ACADEMY</h3>
+<p style="font-style:italic;font-size:12px;margin:10px 0;color:#c2d4f0">... Building minds, inspiring Excellence.<br>Shaping the future.</p>
+<div class="info">🌐 <span><b>An International Online School For Grades 7-12 | JSS1-SS3 | Year 7-12</b></span></div>
+<div class="info">📖 <span><b>We make Physics, Chemistry, Biology & Mathematics EASY</b> to understand and pass with A-Grades! -All topics - Practical + Theory+with life experience+Diagrams+3D images and animations with experiments</span></div>
+<div class="info">📍 <span><b>Teaching Students Across USA, UK, Canada, Nigeria, Australia & Europe</b> — Live on Google Meet + Classroom + Whatsapp</span></div>
+</div>
+<div class="hero-imgs">
+<img class="main-img" src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=700">
+<img class="top-img" src="https://images.unsplash.com/photo-1588075592446-265fd1e4e76f?w=400">
+<img class="bot-img" src="https://images.unsplash.com/photo-1531496730074-83b638c0a7ac?w=400">
+</div>
+</section>
+
+<div class="panels">
+<div class="panel">
+<h4>HOW TO JOIN LIVE CLASS (Very Easy!)</h4>
+<div class="step"><div class="num">1</div>Click BLUE button: <a href="https://meet.google.com/fim-eeua-dor" target="_blank" class="btn-blue">JOIN LIVE CLASS NOW</a></div>
+<div class="step"><div class="num">2</div>Link: <a href="https://meet.google.com/fim-eeua-dor" target="_blank" style="color:#7ab8ff;text-decoration:underline">meet.google.com/fim-eeua-dor</a></div>
+<div class="step"><div class="num">3</div>Enter your name and JOIN!</div>
+<p style="font-size:10px;margin-top:8px;opacity:.7">We are live daily! Check timetable in Classroom.</p>
+</div>
+<div class="panel">
+<h4>OUR 6 INTERNATIONAL CLASSROOMS</h4>
+<p style="text-align:center;font-size:10px;margin-bottom:8px">Join Your Country Classroom on Google Classroom:</p>
+<div class="class-grid">
+<a href="https://classroom.google.com" target="_blank" class="cbox"><img src="https://flagcdn.com/w40/us.png">USA<br><b>lvrdvh7f</b></a>
+<a href="https://classroom.google.com" target="_blank" class="cbox"><img src="https://flagcdn.com/w40/gb.png">UK<br><b>o2k7o3l5</b></a>
+<a href="https://classroom.google.com" target="_blank" class="cbox"><img src="https://flagcdn.com/w40/ca.png">CANADA<br><b>d3c4v6a7</b></a>
+<a href="https://classroom.google.com" target="_blank" class="cbox"><img src="https://flagcdn.com/w40/ng.png">NIGERIA<br><b>qobzjcr6</b></a>
+<a href="https://classroom.google.com" target="_blank" class="cbox"><img src="https://flagcdn.com/w40/au.png">AUSTRALIA<br><b>p4r5t6y8</b></a>
+<a href="https://classroom.google.com" target="_blank" class="cbox"><img src="https://flagcdn.com/w40/eu.png">EUROPE<br><b>z9x8c7v6</b></a>
+</div>
+<p style="font-size:9px;color:#ffcc33;margin-top:8px;text-align:center">How to join: Go to classroom.google.com > Click + JOIN CLASS > Enter CODE</p>
+</div>
+</div>
+
+<section class="sub-sec">
+<h3>SUBJECTS WE TEACH</h3>
+<div class="sub-cards">
+<div class="scard"><img src="https://images.unsplash.com/photo-1464802686167-b939a6910659?w=300"><h5>PHYSICS</h5><p>All topics with easy explanations, diagrams, 3D images, animations and experiments.</p><a href="https://drive.google.com/drive/folders/1YxP_skO5F5LSRzSf6n-5EHKRPPCqhCE7" target="_blank" class="open">OPEN</a></div>
+<div class="scard"><img src="https://images.unsplash.com/photo-1532187863486-abf9dbad1b69?w=300"><h5>CHEMISTRY</h5><p>All topics with practical experiments, diagrams, 3D images, real-life applications.</p><a href="https://drive.google.com/drive/folders/1YxP_skO5F5LSRzSf6n-5EHKRPPCqhCE7" target="_blank" class="open">OPEN</a></div>
+<div class="scard"><img src="https://images.unsplash.com/photo-1530026405186-ed1f139313f8?w=300"><h5>BIOLOGY</h5><p>All topics with diagrams, 3D images, animations and practical experiments.</p><a href="https://drive.google.com/drive/folders/1YxP_skO5F5LSRzSf6n-5EHKRPPCqhCE7" target="_blank" class="open">OPEN</a></div>
+<div class="scard"><img src="https://images.unsplash.com/photo-1635070041078-e363dbe005cb?w=300"><h5>MATHEMATICS</h5><p>General & Further Mathematics with step-by-step solutions and exam techniques.</p><a href="https://drive.google.com/drive/folders/1YxP_skO5F5LSRzSf6n-5EHKRPPCqhCE7" target="_blank" class="open">OPEN</a></div>
+<div class="scard"><img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=300"><h5>BASIC SCIENCE & TECH (JSS)</h5><p>For JSS Students with simple explanations, activities and practical experiments.</p><a href="https://drive.google.com/drive/folders/1YxP_skO5F5LSRzSf6n-5EHKRPPCqhCE7" target="_blank" class="open">OPEN</a></div>
+</div>
+<div class="why">
+<h4>WHY CHOOSE US?</h4>
+<li>✅ Experienced International Teacher</li>
+<li>✅ Live Interactive Classes</li>
+<li>✅ Recorded Videos + Notes + Assignments + Certificate</li>
+<li>✅ Exam Focused: WAEC, NECO, JAMB, IGCSE, GCSE, SAT, Common Entrance, AP1 etc.</li>
+<li>✅ Affordable Fee – Pay Per Term or Weekly</li>
+<li>✅ WhatsApp Support 24/7</li>
+</div>
+</section>
+
+<section class="learn">
+<h3>LEARNING CENTER</h3>
+<div class="licons">
+<div class="licon" onclick="showPage('lesson-notes')"><div class="ico">📄</div><span style="font-size:10px">Lesson Notes</span></div>
+<div class="licon" onclick="showPage('video-lessons')"><div class="ico">▶️</div><span style="font-size:10px">Video Lessons</span></div>
+<div class="licon" onclick="showPage('assignments')"><div class="ico">📝</div><span style="font-size:10px">Assignments</span></div>
+<div class="licon" onclick="showPage('quizzes')"><div class="ico">📋</div><span style="font-size:10px">Quizzes & Tests</span></div>
+<div class="licon" onclick="showPage('past-questions')"><div class="ico">📚</div><span style="font-size:10px">Past Questions</span></div>
+<div class="licon" onclick="showPage('study-guides')"><div class="ico">📖</div><span style="font-size:10px">Study Guides</span></div>
+</div>
+<p style="font-size:11px;margin-top:10px;color:#c2d4f0">Everything you need to learn, practice and excel!</p>
+</section>
+
+<section class="contact">
+<h3>— CONTACT US NOW —</h3>
+<div class="cinfo">
+<a href="mailto:scienceandmathsmadeeasy@gmail.com">✉️ scienceandmathsmadeeasy@gmail.com</a>
+<a href="tel:+14022513055">📞 +1 402 251 3055 (USA) +14022513055</a>
+<a href="https://wa.me/2348063123828" target="_blank">💚 +234 806 312 3828 (Nigeria) +2348063123828</a>
+</div>
+<div class="gold-btns">
+<a href="https://meet.google.com/fim-eeua-dor" target="_blank" class="gbtn">🎥 JOIN LIVE CLASS NOW<br><small>https://meet.google.com/fim-eeua-dor</small></a>
+<a href="https://classroom.google.com" target="_blank" class="gbtn">📚 JOIN CLASSROOM<br><small>https://classroom.google.com</small></a>
+<a href="https://chat.whatsapp.com/Dw3CxBWDUpZ9cxyVZkRYTI" target="_blank" class="gbtn">💬 JOIN WHATSAPP GROUP<br><small>https://chat.whatsapp.com/Dw3CxBWDUpZ9cxyVZkRYTI</small></a>
+</div>
+<p style="font-size:8px;opacity:.5;margin-top:12px">VELOCITY INTERNATIONAL STEM ACADEMY – Building Minds, Inspiring Excellence, Shaping the Future.</p>
+</section>
+</div>
+
+<!-- ABOUT -->
+<div id="about" class="page-sec">
+<span class="back" onclick="showPage('home')">← Back to Home</span>
+<h2>ABOUT VELOCITY INTERNATIONAL STEM ACADEMY</h2>
+<div class="card2"><p>An International Online School For Grades 7-12 | JSS1-SS3 | Year 7-12<br>Building minds, inspiring Excellence. Shaping the future.<br><br>We make Physics, Chemistry, Biology & Mathematics EASY to understand and pass with A-Grades! All topics - Practical + Theory + life experience + Diagrams + 3D images and animations with experiments.</p></div>
+<div class="card2"><h3>WHY CHOOSE US?</h3><p>✅ Experienced International Teacher<br>✅ Live Interactive Classes<br>✅ Recorded Videos + Notes + Assignments + Certificate<br>✅ Exam Focused: WAEC, NECO, JAMB, IGCSE, GCSE, SAT, Common Entrance, AP1<br>✅ Affordable Fee – Pay Per Term or Weekly<br>✅ WhatsApp Support 24/7</p></div>
+</div>
+
+<!-- ACADEMICS -->
+<div id="academics" class="page-sec">
+<span class="back" onclick="showPage('home')">← Back to Home</span>
+<h2>ACADEMICS - PHYSICS, CHEMISTRY, BIOLOGY, MATHEMATICS</h2>
+<div class="card2"><h3>Physics Classroom</h3><p>All topics Practical + Theory + Diagrams + 3D + Animations + Experiments</p><a href="https://drive.google.com/drive/folders/1YxP_skO5F5LSRzSf6n-5EHKRPPCqhCE7" target="_blank" style="color:#ffcc33">OPEN PHYSICS DRIVE</a></div>
+<div class="card2"><h3>Chemistry (With experiments)</h3><p>Real-life applications + experiments</p><a href="https://drive.google.com/drive/folders/1YxP_skO5F5LSRzSf6n-5EHKRPPCqhCE7" target="_blank" style="color:#ffcc33">OPEN CHEMISTRY</a></div>
+<div class="card2"><h3>Mathematics (General & Further)</h3><p>Step-by-step solutions</p><a href="https://drive.google.com/drive/folders/1YxP_skO5F5LSRzSf6n-5EHKRPPCqhCE7" target="_blank" style="color:#ffcc33">OPEN MATHS</a></div>
+</div>
+
+<!-- LEARNING CENTER MAIN -->
+<div id="learning" class="page-sec">
+<span class="back" onclick="showPage('home')">← Back to Home</span>
+<h2>LEARNING CENTER - Everything you need!</h2>
+<div class="gold-btns">
+<div class="gbtn" onclick="showPage('lesson-notes')" style="cursor:pointer">📄 Lesson Notes<br><small>Click to open</small></div>
+<div class="gbtn" onclick="showPage('video-lessons')" style="cursor:pointer">▶️ Video Lessons<br><small>Live: fim-eeua-dor</small></div>
+<div class="gbtn" onclick="showPage('assignments')" style="cursor:pointer">📝 Assignments<br><small>Submit via Classroom</small></div>
+<div class="gbtn" onclick="showPage('quizzes')" style="cursor:pointer">📋 Quizzes & Tests<br><small>20 questions</small></div>
+<div class="gbtn" onclick="showPage('past-questions')" style="cursor:pointer">📚 Past Questions<br><small>WAEC, JAMB, IGCSE</small></div>
+<div class="gbtn" onclick="showPage('study-guides')" style="cursor:pointer">📖 Study Guides<br><small>How to get A-Grade</small></div>
+</div>
+</div>
+
+<!-- CLASSROOMS -->
+<div id="classrooms" class="page-sec">
+<span class="back" onclick="showPage('home')">← Back to Home</span>
+<h2>OUR 6 INTERNATIONAL CLASSROOMS</h2>
+<div class="class-grid">
+<a href="https://classroom.google.com" target="_blank" class="cbox"><img src="https://flagcdn.com/w40/us.png">USA CLASSROOM<br><b>lvrdvh7f</b></a>
+<a href="https://classroom.google.com" target="_blank" class="cbox"><img src="https://flagcdn.com/w40/gb.png">UK CLASSROOM<br><b>o2k7o3l5</b></a>
+<a href="https://classroom.google.com" target="_blank" class="cbox"><img src="https://flagcdn.com/w40/ca.png">CANADA CLASSROOM<br><b>d3c4v6a7</b></a>
+<a href="https://classroom.google.com" target="_blank" class="cbox"><img src="https://flagcdn.com/w40/ng.png">NIGERIA CLASSROOM<br><b>qobzjcr6</b></a>
+<a href="https://classroom.google.com" target="_blank" class="cbox"><img src="https://flagcdn.com/w40/au.png">AUSTRALIA CLASSROOM<br><b>p4r5t6y8</b></a>
+<a href="https://classroom.google.com" target="_blank" class="cbox"><img src="https://flagcdn.com/w40/eu.png">EUROPE CLASSROOM<br><b>z9x8c7v6</b></a>
+</div>
+<p style="margin-top:10px;font-size:11px;color:#ffcc33">How to join: Go to classroom.google.com > Click + JOIN CLASS > Enter CODE</p>
+</div>
+
+<!-- CONTACT PAGE -->
+<div id="contact-page" class="page-sec">
+<span class="back" onclick="showPage('home')">← Back to Home</span>
+<h2>CONTACT US NOW</h2>
+<div class="card2">
+<p>✉️ Email: scienceandmathsmadeeasy@gmail.com<br>📞 USA: +1 402 251 3055 / +14022513055<br>💚 Nigeria: +234 806 312 3828 / +2348063123828<br>WhatsApp Support 24/7</p>
+</div>
+<div class="gold-btns">
+<a href="https://meet.google.com/fim-eeua-dor" target="_blank" class="gbtn">🎥 JOIN LIVE CLASS NOW<br><small>https://meet.google.com/fim-eeua-dor</small></a>
+<a href="https://classroom.google.com" target="_blank" class="gbtn">📚 JOIN CLASSROOM<br><small>https://classroom.google.com</small></a>
+<a href="https://chat.whatsapp.com/Dw3CxBWDUpZ9cxyVZkRYTI" target="_blank" class="gbtn">💬 JOIN WHATSAPP GROUP<br><small>https://chat.whatsapp.com/Dw3CxBWDUpZ9cxyVZkRYTI</small></a>
+</div>
+</div>
+
+<!-- LESSON NOTES -->
+<div id="lesson-notes" class="page-sec">
+<span class="back" onclick="showPage('learning')">← Back to Learning Center</span>
+<h2>📄 Lesson Notes</h2>
+<div class="card2"><h3>Physics 18 Weeks Complete - USA Standard</h3><p>All topics with easy explanations, diagrams, 3D images, animations. Offline HTML files for phone. Download from Classroom: USA lvrdvh7f | Nigeria qobzjcr6</p><a href="https://drive.google.com/drive/folders/1YxP_skO5F5LSRzSf6n-5EHKRPPCqhCE7" target="_blank" style="color:#ffcc33">OPEN DRIVE</a></div>
+<div class="card2"><h3>Chemistry Notes</h3><p>All topics JSS1-SS3 with practical experiments - Basic Science & Basic Tech for JSS</p></div>
+<div class="card2"><h3>Biology Notes</h3><p>With 3D diagrams and animations - Practical + Theory + life experience</p></div>
+<div class="card2"><h3>Mathematics Notes</h3><p>General & Further Mathematics step-by-step - EASY to understand and pass with A-Grades!</p></div>
+</div>
+
+<!-- VIDEO LESSONS -->
+<div id="video-lessons" class="page-sec">
+<span class="back" onclick="showPage('learning')">← Back to Learning Center</span>
+<h2>▶️ Video Lessons</h2>
+<div class="card2"><h3>Live Daily on Google Meet</h3><p>Link: <a href="https://meet.google.com/fim-eeua-dor" target="_blank" style="color:#7ab8ff;text-decoration:underline">https://meet.google.com/fim-eeua-dor</a><br>HOW TO JOIN: Click BLUE button JOIN LIVE CLASS NOW > Enter name > JOIN! Live daily!</p><p>All recordings saved in Google Classroom.</p></div>
+<div class="card2"><h3>How to Watch Recorded Videos</h3><p>Go to classroom.google.com > Enter Code (lvrdvh7f, o2k7o3l5, d3c4v6a7, qobzjcr6, p4r5t6y8, z9x8c7v6) > Classwork > Materials > Video Lessons</p></div>
+</div>
+
+<!-- ASSIGNMENTS -->
+<div id="assignments" class="page-sec">
+<span class="back" onclick="showPage('learning')">← Back to Learning Center</span>
+<h2>📝 Assignments</h2>
+<div class="card2"><h3>Weekly Assignments</h3><p>Submit via Google Classroom. Codes: USA lvrdvh7f, UK o2k7o3l5, Canada d3c4v6a7, Nigeria qobzjcr6, Australia p4r5t6y8, Europe z9x8c7v6</p><ul style="margin-left:15px"><li>Physics Assignment 1: Measurement</li><li>Chemistry Assignment 1: Particulate Nature (With experiments)</li><li>Biology Assignment 1: Living Things</li><li>Mathematics: General & Further</li></ul></div>
+<div class="card2"><h3>How to Submit</h3><p>classroom.google.com > Your Class > Classwork > Assignment > View > Add > Turn In</p></div>
+</div>
+
+<!-- QUIZZES -->
+<div id="quizzes" class="page-sec">
+<span class="back" onclick="showPage('learning')">← Back to Learning Center</span>
+<h2>📋 Quizzes & Tests</h2>
+<div class="card2"><h3>Weekly Quizzes - 20 Questions, 20 Minutes</h3><p><a href="https://forms.google.com" target="_blank" style="color:#7ab8ff">Take Physics Quiz Week 1</a><br>Test your understanding after each lesson. Exam Focused: WAEC, NECO, JAMB, IGCSE, GCSE, SAT, Common Entrance, AP1 etc.</p></div>
+<div class="card2"><h3>Monthly Comprehensive Tests</h3><p>WAEC, JAMB, IGCSE, SAT style questions - Pass with A-Grades!</p></div>
+</div>
+
+<!-- PAST QUESTIONS -->
+<div id="past-questions" class="page-sec">
+<span class="back" onclick="showPage('learning')">← Back to Learning Center</span>
+<h2>📚 Past Questions</h2>
+<div class="card2"><h3>10 Years Past Questions with Detailed Solutions</h3><p>WAEC Physics 2015-2024<br>JAMB Physics 2015-2024<br>SAT Physics<br>IGCSE & GCSE Physics<br>NECO, Common Entrance, AP1 etc.<br>All subjects: Physics, Chemistry (With experiments), Biology, Mathematics</p><a href="https://drive.google.com/drive/folders/1YxP_skO5F5LSRzSf6n-5EHKRPPCqhCE7" target="_blank" style="color:#ffcc33">OPEN PAST QUESTIONS DRIVE</a></div>
+</div>
+
+<!-- STUDY GUIDES -->
+<div id="study-guides" class="page-sec">
+<span class="back" onclick="showPage('learning')">← Back to Learning Center</span>
+<h2>📖 Study Guides</h2>
+<div class="card2"><h3>How to Get A-Grade in Physics, Chemistry, Biology & Mathematics</h3><p>1. Attend live classes daily: meet.google.com/fim-eeua-dor<br>2. Copy notes with diagrams + 3D images + animations<br>3. Do all assignments in Classroom (lvrdvh7f, o2k7o3l5, d3c4v6a7, qobzjcr6, p4r5t6y8, z9x8c7v6)<br>4. Practice past questions daily - WAEC, NECO, JAMB, IGCSE, GCSE, SAT<br>5. Join WhatsApp for support 24/7: <a href="https://chat.whatsapp.com/Dw3CxBWDUpZ9cxyVZkRYTI" target="_blank" style="color:#7ab8ff">WhatsApp Group</a><br>6. Affordable Fee – Pay Per Term or Weekly</p></div>
+<div class="card2"><h3>Contact for Private Tutoring</h3><p>Email: scienceandmathsmadeeasy@gmail.com<br>USA: +1 402 251 3055 / +14022513055<br>Nigeria: +234 806 312 3828 / +2348063123828<br>An International Online School For Grades 7-12 | JSS1-SS3 | Year 7-12</p></div>
+</div>
+
+<script>
+function showPage(id,el){
+document.querySelectorAll('.page-sec').forEach(p=>p.classList.remove('active'));
+document.getElementById(id).classList.add('active');
+document.querySelectorAll('nav a').forEach(a=>a.classList.remove('active'));
+if(el) el.classList.add('active');
+window.scrollTo(0,0);
+}
+</script>
+</body>
+</html>
