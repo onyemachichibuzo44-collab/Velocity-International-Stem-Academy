@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>VELOCITY INTERNATIONAL STEM ACADEMY - Long Flyer Design</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:Poppins,sans-serif;background:#020e2b;color:white;overflow-x:hidden}
+a{text-decoration:none;color:inherit}
+/* LONG FLYER CONTAINER */
+.flyer{width:100%;max-width:900px;margin:0 auto;background:#081c3e;box-shadow:0 0 40px rgba(0,0,0,0.8)}
+/* TOP HEADER WITH GOLD PATTERN */
+.top{position:relative;background:linear-gradient(180deg,#0a2452 0%,#081c3e 100%);padding:10px 16px;display:flex;justify-content:space-between;align-items:center;border-bottom:3px solid #ffcc33;overflow:hidden}
+.top::before{content:"";position:absolute;top:-20px;left:-20px;width:120px;height:120px;background:radial-gradient(circle,rgba(255,204,51,0.15) 0%,transparent 70%);border-radius:50%}
+.logo{display:flex;align-items:center;gap:10px;position:relative;z-index:2}
+.shield{width:56px;height:64px;background:linear-gradient(180deg,#ffdd66 0%,#c9a227 50%,#8a6a14 100%);clip-path:polygon(50% 0%,100% 18%,100% 72%,50% 100%,0% 72%,0% 18%);display:flex;align-items:center;justify-content:center;border:2px solid #ffec99;box-shadow:0 3px 10px rgba(0,0,0,0.4)}
+.shield span{font-size:24px;font-weight:900;color:#081c3e;transform:translateY(-2px)}
+.logo-text{font-weight:900;font-size:28px;letter-spacing:1px;line-height:0.9}.logo-text small{font-size:10px;font-weight:500;letter-spacing:2px;display:block;margin-top:2px;opacity:0.9}
+.menu{display:flex;gap:14px;font-size:10px;font-weight:700;align-items:center;position:relative;z-index:2}
+.menu a{color:white}.menu a.active{color:#ffcc33;border-bottom:2px solid #ffcc33;padding-bottom:3px}
+.gold-join{background:linear-gradient(180deg,#fff0a0 0%,#ffcc33 20%,#c9a227 80%,#8a6a14 100%);color:#081c3e;padding:8px 18px;border-radius:6px;font-weight:800;font-size:11px;border:1px solid #ffec99;box-shadow:0 2px 8px rgba(0,0,0,0.3)}
+/* WELCOME SECTION WITH COLOURFUL SCIENCE PATTERN */
+.welcome{position:relative;background:radial-gradient(ellipse at 20% 30%,#143d8a 0%,#0a2452 40%,#081c3e 80%);padding:18px 16px 0 16px;overflow:hidden}
+.welcome::before{content:"🧬";position:absolute;left:15%;top:40%;font-size:80px;opacity:0.08;transform:rotate(-15deg)}
+.welcome::after{content:"⚛️";position:absolute;right:35%;top:15%;font-size:70px;opacity:0.08}
+.welcome-grid{display:grid;grid-template-columns:42% 58%;gap:0;position:relative;z-index:2}
+.welcome-text h1{font-size:46px;font-weight:900;line-height:0.92;letter-spacing:-1px}.welcome-text h1 .to{font-size:26px;margin-left:36px;font-weight:800;display:block;color:white}.welcome-text h1 .vel{color:#ffcc33;font-size:50px;text-shadow:0 2px 10px rgba(255,204,51,0.3)}
+.welcome-text h2{color:#ffcc33;font-size:15px;font-weight:700;margin-top:4px;letter-spacing:0.5px}
+.welcome-text .slogan{font-style:italic;font-size:12px;margin:10px 0;color:#c2d4f0;line-height:1.3}
+.welcome-text .point{display:flex;gap:8px;margin:10px 0;font-size:10.5px;line-height:1.35;font-weight:600}.welcome-text .point i{font-style:normal;font-size:13px;flex-shrink:0}
+.hero-pics{position:relative;height:460px}
+.hero-pics .big{position:absolute;left:0;top:10px;width:66%;height:88%;border-radius:16px;overflow:hidden;border:2px solid rgba(255,255,255,0.15);box-shadow:0 8px 30px rgba(0,0,0,0.5);z-index:2}
+.hero-pics .big img{width:100%;height:100%;object-fit:cover;object-position:top}
+.hero-pics .s1{position:absolute;right:0;top:0;width:40%;height:34%;border-radius:12px;overflow:hidden;border:2px solid rgba(255,204,51,0.3);box-shadow:0 4px 15px rgba(0,0,0,0.4);z-index:3}
+.hero-pics .s2{position:absolute;right:0;bottom:18%;width:38%;height:30%;border-radius:12px;overflow:hidden;border:2px solid rgba(255,255,255,0.15);box-shadow:0 4px 15px rgba(0,0,0,0.4);z-index:3}
+.hero-pics .s1 img,.hero-pics .s2 img{width:100%;height:100%;object-fit:cover}
+/* TWO COLOURFUL BOXES WITH GOLD BORDER LIKE FLYER */
+.two{position:relative;background:#081c3e;padding:12px 12px;display:grid;grid-template-columns:40% 58%;gap:12px}
+.two::before{content:"";position:absolute;left:0;top:0;right:0;height:1px;background:linear-gradient(90deg,transparent,#ffcc33,transparent)}
+.box{background:linear-gradient(180deg,#14346e 0%,#0e2854 50%,#0a1f44 100%);border:2px solid #ffcc33;border-radius:14px;padding:12px;position:relative;box-shadow:0 4px 20px rgba(0,0,0,0.4), inset 0 1px 0 rgba(255,255,255,0.1)}
+.box::before{content:"";position:absolute;top:0;left:10%;right:10%;height:1px;background:linear-gradient(90deg,transparent,rgba(255,204,51,0.5),transparent)}
+.box h3{color:#ffcc33;font-size:12px;font-weight:800;text-align:center;margin-bottom:10px;letter-spacing:0.3px;text-shadow:0 1px 2px rgba(0,0,0,0.5)}
+.step{display:flex;align-items:center;gap:8px;margin:9px 0;font-size:10.5px;font-weight:500}
+.num{background:linear-gradient(180deg,#ffeaa0,#ffcc33);color:#081c3e;width:22px;height:22px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:12px;box-shadow:0 2px 4px rgba(0,0,0,0.3);flex-shrink:0}
+.blue{background:linear-gradient(180deg,#2a7fff,#1a5eff);color:white;padding:5px 10px;border-radius:6px;font-size:9px;font-weight:700;box-shadow:0 2px 6px rgba(26,94,255,0.4)}
+.vid{position:absolute;right:10px;bottom:10px;background:linear-gradient(180deg,#2a7fff,#1a5eff);width:32px;height:28px;border-radius:6px;display:flex;align-items:center;justify-content:center;font-size:14px;box-shadow:0 2px 8px rgba(0,0,0,0.3)}
+.class-grid{display:grid;grid-template-columns:1fr 1fr;gap:7px}
+.citem{background:linear-gradient(180deg,#1a3a7a,#132f5e);border:1px solid #3a5a9a;border-radius:8px;padding:6px 7px;display:flex;gap:7px;align-items:center;font-size:10px;box-shadow:inset 0 1px 0 rgba(255,255,255,0.1)}
+.citem img{width:32px;height:20px;border-radius:3px;object-fit:cover;box-shadow:0 1px 3px rgba(0,0,0,0.3)}
+.citem b{font-size:10px;font-weight:700}
+.how{color:#ffcc33;font-size:8.5px;margin-top:8px;font-weight:600}
+/* SUBJECTS WHITE WITH COLOURFUL CARDS LIKE FLYER */
+.subjects{position:relative;background:linear-gradient(180deg,#f8fbff 0%,#eef2f7 100%);color:#081c3e;padding:12px 10px;display:grid;grid-template-columns:1fr 290px;gap:10px}
+.subjects::before{content:"";position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,#ffcc33,#ffeaa0,#ffcc33)}
+.subjects h2{text-align:center;font-size:15px;font-weight:800;grid-column:1/-1;margin-bottom:8px;color:#081c3e;letter-spacing:0.5px}
+.cards{display:grid;grid-template-columns:repeat(5,1fr);gap:8px}
+.card{background:white;border-radius:12px;overflow:hidden;border:1px solid #d8e1ec;text-align:center;box-shadow:0 3px 12px rgba(0,0,0,0.08);transition:transform 0.2s;position:relative}
+.card::before{content:"";position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,#ffcc33,#1a5eff,#00d4aa,#ff6b6b,#9b59b6)}
+.card:hover{transform:translateY(-3px);box-shadow:0 6px 20px rgba(0,0,0,0.12)}
+.card img{width:100%;height:100px;object-fit:cover}
+.card h5{font-size:9.5px;font-weight:800;margin:6px 0 3px;color:#081c3e}.card p{font-size:8px;padding:0 6px 6px;color:#5a6a7e;line-height:1.25}
+.card .open{background:linear-gradient(180deg,#ffeaa0,#ffcc33);color:#081c3e;padding:4px 12px;border-radius:20px;font-size:9px;font-weight:800;display:inline-block;margin:0 0 8px;box-shadow:0 2px 6px rgba(255,204,51,0.3);border:1px solid #e6b800}
+.why{background:linear-gradient(180deg,#0e2e66 0%,#081c3e 100%);color:white;border-radius:14px;padding:12px;border:2px solid #1e4a8a;box-shadow:0 4px 20px rgba(0,0,0,0.3), inset 0 1px 0 rgba(255,255,255,0.1);position:relative}
+.why::before{content:"";position:absolute;top:-1px;left:20%;right:20%;height:2px;background:linear-gradient(90deg,transparent,#ffcc33,transparent)}
+.why h4{color:#ffcc33;font-size:13px;font-weight:800;text-align:center;margin-bottom:10px;text-shadow:0 1px 2px rgba(0,0,0,0.5)}
+.why li{list-style:none;font-size:10px;margin:7px 0;display:flex;gap:6px;line-height:1.3;font-weight:500}
+/* LEARNING CENTER WITH COLOURFUL PATTERN LIKE FLYER */
+.learning{position:relative;background:linear-gradient(180deg,#081c3e 0%,#0a2452 100%);padding:14px 10px;text-align:center;overflow:hidden;border-top:2px solid #ffcc33;border-bottom:2px solid #ffcc33}
+.learning::before{content:"";position:absolute;top:0;left:0;right:0;bottom:0;background:radial-gradient(ellipse at 20% 50%,rgba(26,94,255,0.15) 0%,transparent 50%), radial-gradient(ellipse at 80% 50%,rgba(255,204,51,0.1) 0%,transparent 50%)}
+.learning h3{color:#ffcc33;font-size:18px;font-weight:800;letter-spacing:2px;margin-bottom:10px;position:relative;z-index:2;text-shadow:0 2px 8px rgba(255,204,51,0.3)}
+.learning-bg{position:absolute;top:0;left:0;width:170px;height:100%;opacity:0.15;z-index:1}.learning-bg.right{left:auto;right:0}
+.learning-bg img{width:100%;height:100%;object-fit:cover}
+.licons{display:flex;justify-content:center;gap:8px;flex-wrap:wrap;position:relative;z-index:2}
+.licon{width:84px;background:linear-gradient(180deg,rgba(20,52,110,0.95) 0%,rgba(10,33,71,0.95) 100%);border:1.5px solid #ffcc33;border-radius:10px;padding:7px 4px;text-align:center;backdrop-filter:blur(6px);box-shadow:0 3px 12px rgba(0,0,0,0.3), inset 0 1px 0 rgba(255,255,255,0.1);transition:transform 0.2s}
+.licon:hover{transform:translateY(-2px);box-shadow:0 6px 20px rgba(0,0,0,0.4)}
+.licon .ico{width:32px;height:26px;margin:0 auto 4px;background:linear-gradient(180deg,white,#e8f0ff);border-radius:6px;display:flex;align-items:center;justify-content:center;font-size:15px;color:#081c3e;box-shadow:0 2px 4px rgba(0,0,0,0.2)}
+.licon span{font-size:8.5px;color:#dbe6f5;display:block;font-weight:600;margin-top:2px}
+.learn-text{font-size:11px;margin-top:10px;position:relative;z-index:2;color:#c2d4f0;font-weight:500}
+/* CONTACT WITH GOLD PATTERN LIKE FLYER */
+.contact{position:relative;background:linear-gradient(180deg,#0a2452 0%,#081c3e 100%);padding:16px 10px;text-align:center;overflow:hidden}
+.contact::before{content:"";position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(90deg,transparent,#ffcc33,transparent)}
+.contact h3{color:#ffcc33;font-size:15px;font-weight:800;margin-bottom:10px;letter-spacing:1px;position:relative;z-index:2}
+.cinfos{display:flex;justify-content:center;gap:16px;flex-wrap:wrap;font-size:10px;margin-bottom:12px;position:relative;z-index:2;font-weight:600}
+.gold-row{display:flex;justify-content:center;gap:8px;flex-wrap:wrap;position:relative;z-index:2}
+.gbtn{width:300px;background:linear-gradient(180deg,#fff8c0 0%,#ffeaa0 15%,#ffcc33 35%,#c9a227 75%,#8a6a14 100%);color:#081c3e;border-radius:8px;padding:10px 8px;text-align:center;font-weight:800;font-size:10.5px;border:1px solid #ffec99;line-height:1.2;box-shadow:0 3px 12px rgba(0,0,0,0.3), inset 0 1px 0 rgba(255,255,255,0.6);transition:transform 0.2s}
+.gbtn:hover{transform:translateY(-2px)}
+.gbtn small{font-size:8px;font-weight:500;display:block;word-break:break-all;margin-top:3px;opacity:0.85}
+.microscope{position:absolute;right:8px;bottom:30px;width:130px;opacity:0.25;z-index:1;filter:brightness(1.2)}
+.footer{font-size:7.5px;opacity:0.5;margin-top:12px;position:relative;z-index:2;letter-spacing:0.3px}
+@media(max-width:850px){.welcome-grid{grid-template-columns:1fr}.hero-pics{height:320px}.two{grid-template-columns:1fr}.subjects{grid-template-columns:1fr}.cards{grid-template-columns:repeat(2,1fr)}.menu{display:none}.learning-bg{display:none}.microscope{display:none}.flyer{max-width:100%}}
+</style>
+</head>
+<body>
+<div class="flyer">
+<div class="top">
+<div class="logo"><div class="shield"><span>🛡️</span></div><div class="logo-text">VELOCITY<small>INTERNATIONAL STEM ACADEMY</small></div></div>
+<div class="menu"><a class="active">HOME</a><a>ABOUT US</a><a>ACADEMICS</a><a>LEARNING CENTER</a><a>CLASSROOMS</a><a>CONTACT US</a><a href="https://meet.google.com/fim-eeua-dor" target="_blank" class="gold-join">JOIN NOW</a></div>
+</div>
+
+<div class="welcome">
+<div class="welcome-grid">
+<div class="welcome-text">
+<h1>WELCOME<span class="to">TO</span><span class="vel">VELOCITY</span></h1>
+<div class="sub">INTERNATIONAL STEM ACADEMY</div>
+<div class="slogan">... Building minds, inspiring Excellence.<br>Shaping the future.</div>
+<div class="point"><i>🌐</i> <span><b>An International Online School For Grades 7-12 | JSS1-SS3 | Year 7-12</b></span></div>
+<div class="point"><i>📖</i> <span><b>We make Physics, Chemistry, Biology & Mathematics EASY to understand and pass with A-Grades!</b></span></div>
+<div class="point"><i>📍</i> <span><b>Teaching Students Across USA, UK, Canada, Nigeria, Australia & Europe — Live on Google Meet + Google Classroom! + Whatsapp</b></span></div>
+</div>
+<div class="hero-pics">
+<div class="big"><img src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?w=600&h=700&fit=crop"></div>
+<div class="s1"><img src="https://images.unsplash.com/photo-1580894732444-8ecded7900cd?w=400"></div>
+<div class="s2"><img src="https://images.unsplash.com/photo-1531482615713-2afd690979bc?w=400"></div>
+</div>
+</div>
+</div>
+
+<div class="two">
+<div class="box">
+<h3>HOW TO JOIN LIVE CLASS (Very Easy!)</h3>
+<div class="step"><div class="num">1</div> Click the BLUE button: <a href="https://meet.google.com/fim-eeua-dor" target="_blank" class="blue">JOIN LIVE CLASS NOW</a></div>
+<div class="step"><div class="num">2</div> Link: <a href="https://meet.google.com/fim-eeua-dor" target="_blank" style="color:#7ab8ff;text-decoration:underline">http://meet.google.com/fim-eeua-dor</a></div>
+<div class="step"><div class="num">3</div> Enter your name and JOIN!</div>
+<div class="vid">📹</div>
+<p style="font-size:9px;opacity:0.6;margin-top:6px">We are live daily! Check timetable in Classroom.</p>
+</div>
+<div class="box">
+<h3>OUR 6 INTERNATIONAL CLASSROOMS</h3>
+<p style="text-align:center;font-size:10px;margin-bottom:7px;font-weight:600">Join Your Country Classroom on Google Classroom:</p>
+<div class="class-grid">
+<div class="citem"><img src="https://flagcdn.com/w40/us.png"><span>USA CLASSROOM<br><b>lvrdvh7f</b></span></div>
+<div class="citem"><img src="https://flagcdn.com/w40/gb.png"><span>UK CLASSROOM<br><b>o2k7o3l5</b></span></div>
+<div class="citem"><img src="https://flagcdn.com/w40/ca.png"><span>CANADA CLASSROOM<br><b>d3c4v6a7</b></span></div>
+<div class="citem"><img src="https://flagcdn.com/w40/ng.png"><span>NIGERIA CLASSROOM<br><b>qobzjcr6</b></span></div>
+<div class="citem"><img src="https://flagcdn.com/w40/au.png"><span>AUSTRALIA CLASSROOM<br><b>p4r5t6y8</b></span></div>
+<div class="citem"><img src="https://flagcdn.com/w40/eu.png"><span>EUROPE CLASSROOM<br><b>z9x8c7v6</b></span></div>
+</div>
+<p class="how">How to join: Go to http://classroom.google.com > Click + JOIN CLASS > Enter CODE</p>
+</div>
+</div>
+
+<div class="subjects">
+<h2>SUBJECTS WE TEACH</h2>
+<div>
+<div class="cards">
+<div class="card"><img src="https://images.unsplash.com/photo-1464802686167-b939a6910659?w=400"><h5>PHYSICS</h5><p>All topics with explanations, diagrams, 3D images, animations and experiments.</p><a href="https://drive.google.com/drive/folders/1YxP_skO5F5LSRzSf6n-5EHKRPPCqhCE7" target="_blank" class="open">OPEN</a></div>
+<div class="card"><img src="https://images.unsplash.com/photo-1532187863486-abf9dbad1b69?w=400"><h5>CHEMISTRY</h5><p>All topics with experiments, diagrams, 3D images, animations and real-life applications.</p><a href="https://drive.google.com/drive/folders/1YxP_skO5F5LSRzSf6n-5EHKRPPCqhCE7" target="_blank" class="open">OPEN</a></div>
+<div class="card"><img src="https://images.unsplash.com/photo-1530026405186-ed1f139313f8?w=400"><h5>BIOLOGY</h5><p>All topics with diagrams, 3D images, animations and practical experiments.</p><a href="https://drive.google.com/drive/folders/1YxP_skO5F5LSRzSf6n-5EHKRPPCqhCE7" target="_blank" class="open">OPEN</a></div>
+<div class="card"><img src="https://images.unsplash.com/photo-1635070041078-e363dbe005cb?w=400"><h5>MATHEMATICS</h5><p>General & Further Mathematics with step-by-step solutions and exam techniques.</p><a href="https://drive.google.com/drive/folders/1YxP_skO5F5LSRzSf6n-5EHKRPPCqhCE7" target="_blank" class="open">OPEN</a></div>
+<div class="card"><img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=400"><h5>BASIC SCIENCE & TECH (JSS)</h5><p>For JSS Students with simple explanations, activities and practical experiments.</p><a href="https://drive.google.com/drive/folders/1YxP_skO5F5LSRzSf6n-5EHKRPPCqhCE7" target="_blank" class="open">OPEN</a></div>
+</div>
+</div>
+<div class="why"><h4>WHY CHOOSE US?</h4>
+<li>✉️ Experienced International Teacher</li>
+<li>✅ Live Interactive Classes</li>
+<li>📹 Recorded Videos + Notes + Assignments + Certificate</li>
+<li>✅ Exam Focused: WAEC, NECO, JAMB, IGCSE, GCSE, SAT, Common Entrance, AP1 etc.</li>
+<li>🔒 Affordable Fee – Pay Per Term or Weekly</li>
+<li>💚 WhatsApp Support 24/7</li>
+</div>
+</div>
+
+<div class="learning">
+<div class="learning-bg"><img src="https://images.unsplash.com/photo-1588075592446-265fd1e4e76f?w=300"></div>
+<div class="learning-bg right"><img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=300"></div>
+<h3>LEARNING CENTER</h3>
+<div class="licons">
+<a href="https://drive.google.com/drive/folders/1YxP_skO5F5LSRzSf6n-5EHKRPPCqhCE7" target="_blank" class="licon"><div class="ico">📄</div><span>Lesson Notes</span></a>
+<a href="https://drive.google.com/drive/folders/1YxP_skO5F5LSRzSf6n-5EHKRPPCqhCE7" target="_blank" class="licon"><div class="ico">▶️</div><span>Video Lessons</span></a>
+<a href="https://drive.google.com/drive/folders/1YxP_skO5F5LSRzSf6n-5EHKRPPCqhCE7" target="_blank" class="licon"><div class="ico">📝</div><span>Assignments</span></a>
+<a href="https://drive.google.com/drive/folders/1YxP_skO5F5LSRzSf6n-5EHKRPPCqhCE7" target="_blank" class="licon"><div class="ico">📊</div><span>Quizzes & Tests</span></a>
+<a href="https://drive.google.com/drive/folders/1YxP_skO5F5LSRzSf6n-5EHKRPPCqhCE7" target="_blank" class="licon"><div class="ico">📚</div><span>Past Questions</span></a>
+<a href="https://drive.google.com/drive/folders/1YxP_skO5F5LSRzSf6n-5EHKRPPCqhCE7" target="_blank" class="licon"><div class="ico">📖</div><span>Study Guides</span></a>
+</div>
+<div class="learn-text">Everything you need to learn, practice and excel!</div>
+</div>
+
+<div class="contact">
+<h3>— CONTACT US NOW —</h3>
+<div class="cinfos"><span>✉️ scienceandmathsmadeeasy@gmail.com</span><span>📞 +1 402 251 3055 (USA)</span><span>💚 +234 806 312 3828 (Nigeria)</span></div>
+<div class="gold-row">
+<a href="https://meet.google.com/fim-eeua-dor" target="_blank" class="gbtn">🎥 JOIN LIVE CLASS NOW<br><small>https://meet.google.com/fim-eeua-dor</small></a>
+<a href="https://classroom.google.com" target="_blank" class="gbtn">📚 JOIN CLASSROOM<br><small>https://classroom.google.com</small></a>
+<a href="https://chat.whatsapp.com/Dw3CxBWDUpZ9cxyVZkRYTI" target="_blank" class="gbtn">💬 JOIN WHATSAPP GROUP<br><small>https://chat.whatsapp.com/Dw3CxBWDUpZ9cxyVZkRYTI</small></a>
+</div>
+<div class="footer">VELOCITY INTERNATIONAL STEM ACADEMY – Building Minds, Inspiring Excellence, Shaping the Future.</div>
+</div>
+</div>
+</body>
+</html>
